@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            border: 1px solid salmon;
+            display: flex;
+            /* justify-content: space-around;
+            align-items: center; */
+            height: 250px;
+            flex-direction: row-reverse;
+        }
+        .box{
+            border:2px dotted tomato;
+            width: 100px;
+            height: 100px;
+        }
+        .content{
+            border: 1px solid greenyellow;
+            height: 200px;
+            
+        }
+        .reverse{
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Layout</h1>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+    </div>
+    <div class="content">
+        <p class="reverse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti modi voluptatibus perspiciatis aut reiciendis fuga est? Ducimus quo enim ab nemo sunt! Blanditiis tempora doloremque consequuntur modi voluptatum nobis ut?</p>
+        <p class="reverse">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus aspernatur quaerat incidunt quo? Similique, libero iusto possimus cum, totam tempora consectetur architecto nostrum, enim laboriosam qui quibusdam. Voluptate, perspiciatis vel.</p>
+    </div>
+</body>
+</html>
